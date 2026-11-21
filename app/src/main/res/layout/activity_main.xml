@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/CardBody"
+            android:layout_marginTop="2dp"
+            android:text="@string/subtitle" />
+
+        <!-- 1. Control directo -->
+        <LinearLayout style="@style/Card">
+
+            <TextView style="@style/CardTitle" android:text="@string/card_now" />
+
+            <RadioGroup
+                android:id="@+id/streamGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMedia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/stream_media" />
+
+                <RadioButton
+                    android:id="@+id/rbRing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/stream_ring" />
+
+                <RadioButton
+                    android:id="@+id/rbAlarm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/stream_alarm" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/levelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seek"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDown"
+                    style="@style/BigButton"
+                    android:layout_marginEnd="6dp"
+                    android:text="@string/btn_down" />
+
+                <Button
+                    android:id="@+id/btnUp"
+                    style="@style/BigButton"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/btn_up" />
+            </LinearLayout>
+
+            <TextView style="@style/CardBody" android:gravity="center" android:text="@string/hold_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMute"
+                    style="@android:style/Widget.Material.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btn_mute"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnPanel"
+                    style="@android:style/Widget.Material.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/btn_panel"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2. Botón flotante -->
+        <LinearLayout style="@style/Card">
+
+            <TextView style="@style/CardTitle" android:text="@string/card_bubble" />
+
+            <TextView style="@style/CardBody" android:text="@string/bubble_desc" />
+
+            <Switch
+                android:id="@+id/switchBubble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                android:text="@string/bubble_switch"
+                android:textColor="@color/text"
+                android:textSize="16sp" />
+
+            <TextView style="@style/CardBody" android:text="@string/bubble_stream" />
+
+            <RadioGroup
+                android:id="@+id/bubbleStreamGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/bsAuto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stream_auto" />
+                <RadioButton android:id="@+id/bsMedia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stream_media" />
+                <RadioButton android:id="@+id/bsRing" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stream_ring" />
+                <RadioButton android:id="@+id/bsAlarm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stream_alarm" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 3. Mosaicos -->
+        <LinearLayout style="@style/Card">
+
+            <TextView style="@style/CardTitle" android:text="@string/card_tiles" />
+
+            <TextView style="@style/CardBody" android:text="@string/tiles_desc" />
+
+            <Button
+                android:id="@+id/btnTiles"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_tiles"
+                android:textAllCaps="false" />
+
+            <TextView style="@style/CardBody" android:text="@string/tiles_manual" />
+        </LinearLayout>
+
+        <!-- 4. Tip -->
+        <LinearLayout style="@style/Card" android:layout_marginBottom="12dp">
+
+            <TextView style="@style/CardTitle" android:text="@string/card_tip" />
+
+            <TextView style="@style/CardBody" android:text="@string/tip_body" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

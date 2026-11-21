@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Volumen+</string>
+    <string name="subtitle">Controla el volumen sin botones físicos</string>
+
+    <string name="tile_up">Subir volumen</string>
+    <string name="tile_down">Bajar volumen</string>
+    <string name="tile_subtitle">Multimedia %1$d%%</string>
+
+    <string name="stream_media">Multimedia</string>
+    <string name="stream_ring">Tono</string>
+    <string name="stream_alarm">Alarma</string>
+    <string name="stream_auto">Automático (lo que suene)</string>
+    <string name="level_fmt">%1$s · %2$d%%</string>
+
+    <string name="card_now">Volumen ahora</string>
+    <string name="btn_up">＋ Subir</string>
+    <string name="btn_down">－ Bajar</string>
+    <string name="btn_mute">Silenciar</string>
+    <string name="btn_unmute">Activar sonido</string>
+    <string name="btn_panel">Abrir panel de volumen del sistema</string>
+    <string name="hold_hint">Mantén presionado ＋ o － para cambiar seguido.</string>
+
+    <string name="card_bubble">Botón flotante</string>
+    <string name="bubble_desc">Un control ＋ / － que queda sobre cualquier app (YouTube, juegos, llamadas). Arrástralo a cualquier borde. Se vuelve semitransparente cuando no lo usas.</string>
+    <string name="bubble_switch">Mostrar botón flotante</string>
+    <string name="bubble_stream">El botón flotante controla:</string>
+    <string name="need_overlay">Activa «Mostrar sobre otras apps» para Volumen+ y vuelve aquí.</string>
+
+    <string name="card_tiles">Ajustes rápidos</string>
+    <string name="tiles_desc">Agrega los mosaicos «Subir volumen» y «Bajar volumen» al panel que se abre al deslizar desde arriba. Funcionan incluso con la pantalla bloqueada.</string>
+    <string name="btn_tiles">Agregar mosaicos</string>
+    <string name="tiles_manual">Manual: desliza dos veces desde arriba → lápiz ✏️ (Editar) → arrastra «Subir volumen» y «Bajar volumen» a la parte activa.</string>
+
+    <string name="card_tip">Extra sin apps</string>
+    <string name="tip_body">Android trae un «Menú de accesibilidad» con botones de volumen: Ajustes → Accesibilidad → Menú de accesibilidad → activar. (En Samsung se llama «Menú de asistencia».)</string>
+
+    <string name="notif_channel">Botón flotante</string>
+    <string name="notif_title">Volumen+ activo</string>
+    <string name="notif_text">Usa el botón flotante o estos controles</string>
+    <string name="notif_stop">Ocultar</string>
+    <string name="error_dnd">Android no permite cambiar este volumen ahora (modo No molestar).</string>
+</resources>
